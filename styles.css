@@ -58,6 +58,7 @@ h2 {
     bottom: 0;
     left: 0;
     right: 0;
+    /* The gradient "points" below create a bit of a sharper 'border' for the triangle OL, matching it closer to the sample provided */
     background: linear-gradient(to bottom right, rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
     overflow: hidden;
     width: 0;
