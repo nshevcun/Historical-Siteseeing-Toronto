@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden; /* This is to prevent a horizontal scrollbar from ever appearing */
+}
+body {
+    background: #d5d5d5;
+    font-family: 'Open Sans';
+    /* The global wrapper, which has to be 1100px wide */
+    margin-right: auto; /* The margins allow the content to sit in the middle of the page */
+    margin-left: auto;
+    max-width: 1100px;    
+    padding-top: 20px;
+}
+footer {
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+h1 {
+    font: 60px Open Sans;
+}
+h2 {
+    font: 40px Open Sans;
+    color: #77787a;
+}
+/* Start image grid code */
+* { /* This allows all three columns to sit neatly side by side */
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    padding: 10px;
+    width: 33.3%;
+}
+.column img { /* Clear floats between images inside a column */
+    margin-top: 10px;
+}
+.row:after {  /* Clear floats between the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+/* End image grid code */
+
+/* Start image overlay code */ 
+.image-container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.text {
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    top: 40px;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.heading {
+    font-size: 22px;
+}
+
+.image-container:hover .overlay {
+    width: 100%;
+}
+/* End image overlay code */
+
+/* Font awesome icons start */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    transform: translate(2px, 2px);
+    opacity: 0.4;
+}
+
+.fa-twitter {
+    background: #d5d5d5;
+    color: black;
+}
+
+.fa-facebook {
+    background: #d5d5d5;
+    color: black;
+}
+
+.fa-linkedin {
+    background: #d5d5d5;
+    color: black;
+}
+
+.fa-instagram {
+    background: #d5d5d5;
+    color: black;
+}
+/* Font awesome icons end */
